@@ -1,0 +1,33 @@
+name: ml-tfx
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9.15
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - scikit-learn
+  - jupyter
+  - pip
+  - pip:
+      - tensorflow==2.10.0
+      - tfx==1.11.0
+      - absl-py
+      - apache-beam>=2.41
+      - grpcio
+      - grpcio-status
+      - tensorflow-hub
+      - keras-tuner
+      - google-cloud-storage
+      - docker
+      - ml-metadata==1.11.0
+      - pyarrow==6.0.0
+      - tensorflow-data-validation==1.11.0
+      - tensorflow-serving-api==2.9.0
+      - tensorflow-metadata==1.11.0
+      - tensorflow-model-analysis==0.42.0
+      - tensorflow-transform==1.11.0
+      - tfx-bsl==1.11.0
+
+# pip install --use-deprecated=legacy-resolver tfx==1.11.0

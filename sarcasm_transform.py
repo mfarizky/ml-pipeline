@@ -1,14 +1,11 @@
 
 import tensorflow as tf
 
-
 LABEL_KEY = "is_sarcastic"
 FEATURE_KEY = "headline"
-
 def transformed_name(key):
     """Renaming transformed features"""
     return key + "_xf"
-
 
 def preprocessing_fn(inputs):
     """
